@@ -1,4 +1,4 @@
-# Avionblog
+# Avion Blog
 
 A blog using the cutting edge Phoenix framework and Elixir programming language
 
