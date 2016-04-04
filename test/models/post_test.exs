@@ -1,4 +1,4 @@
-defmodule Avionblog.PostTest do
+/wdefmodule Avionblog.PostTest do
   use Avionblog.ModelCase
 
   alias Avionblog.Post

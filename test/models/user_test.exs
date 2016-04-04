@@ -3,7 +3,7 @@ defmodule Avionblog.UserTest do
 
   alias Avionblog.User
 
-  @valid_attrs %{email: "some content", password_digest: "some content", username: "some content"}
+  @valid_attrs %{email: "test@test.com", password: "test1234", password_confirmation: "test1234", username: "testuser"}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

@@ -2,14 +2,14 @@ defmodule Avionblog.User do
   use Avionblog.Web, :model
 
   schema "users" do
-    field :username, :string
-    field :email, :string
-    field :password_digest, :string
+    field :password, :string, virtual: true
+    field :password_confirmation, :string, virtual: true
 
     timestamps
   end
 
-  @required_fields ~w(username email password_digest)
+
+  @required_fields ~w(username email password_confirmation)
   @optional_fields ~w()
 
   @doc """

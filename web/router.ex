@@ -18,9 +18,16 @@ defmodule Avionblog.Router do
 
     get "/", PageController, :index
 resources "/posts", PostController
-resources "/users", UserController
 
   end
+
+  scope "/", Avionblog do
+    pipe_through :browser # Use the default browser stack
+
+    get "/", PageController, :index
+  resources "/users", UserController
+
+end
 
   # Other scopes may use custom stacks.
   # scope "/api", Avionblog do
